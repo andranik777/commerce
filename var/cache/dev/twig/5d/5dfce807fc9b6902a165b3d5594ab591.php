@@ -110,9 +110,9 @@ class __TwigTemplate_528d4f09136c6446eb3211240cb15ddb extends Template
         <div class=\"col-md-4\">
             <strong>La Boutique Française</strong>
             <hr>
-            06 20 30 40 50<br/>
-            8 rue des lylas fleuris, 75000 Paris.<br/>
-            contact@laboutiquefrancaise.fr<br/>
+            <p><i class=\"fas fa-phone mr-2\"></i> + 01 234 567 88</p>
+            <p><i class=\"fas fa-home mr-2\"></i> Pl. de la Loge, 66000 Perpignan</p>
+            <p><i class=\"fas fa-envelope mr-2\"></i>boutique_francais@gmail.com</p>
         </div>
     </div>
 
@@ -157,13 +157,13 @@ class __TwigTemplate_528d4f09136c6446eb3211240cb15ddb extends Template
         <div class=\"col-md-4\">
             <strong>La Boutique Française</strong>
             <hr>
-            06 20 30 40 50<br/>
-            8 rue des lylas fleuris, 75000 Paris.<br/>
-            contact@laboutiquefrancaise.fr<br/>
+            <p><i class=\"fas fa-phone mr-2\"></i> + 01 234 567 88</p>
+            <p><i class=\"fas fa-home mr-2\"></i> Pl. de la Loge, 66000 Perpignan</p>
+            <p><i class=\"fas fa-envelope mr-2\"></i>boutique_francais@gmail.com</p>
         </div>
     </div>
 
 {% endblock %}
-", "contact/index.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/contact/index.html.twig");
+", "contact/index.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/contact/index.html.twig");
     }
 }

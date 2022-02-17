@@ -326,30 +326,39 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
                     <!-- Grid column -->
                     <div class=\"col-md-3 col-lg-2 col-xl-2 mx-auto mb-4\">
                         <!-- Links -->
+
                         <h6 class=\"text-uppercase fw-bold mb-4\">
                             <a href=\"";
-        // line 161
+        // line 162
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\" class=\"text-reset\">LA BOUTIQUE</a>
                         </h6>
                         <p>
-                            <a class=\"nav-link text-reset\" href=\"";
-        // line 164
+                            <a href=\"";
+        // line 165
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account");
+        echo "\" class=\"text-reset\">Mon compte</a>
+                        </p>
+                        <p>
+                            <a class=\"text-reset\" href=\"";
+        // line 168
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products");
         echo "\" >Nos produits</a>
                         </p>
+
                         <p>
-                            <a class=\"nav-link text-reset\" href=\"";
-        // line 167
+                            <a class=\" text-reset\" href=\"";
+        // line 172
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
         echo "\">Nous Contacter</a>
                         </p>
                         <p>
                             <a href=\"";
-        // line 170
+        // line 175
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("use_term");
         echo "\" class=\"text-reset\">Conditions d'utilisation</a>
                         </p>
+
 
                     </div>
                     <!-- Grid column -->
@@ -361,10 +370,10 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
                         <p><i class=\"fas fa-home me-3\"></i> Pl. de la Loge, 66000 Perpignan</p>
                         <p>
                             <i class=\"fas fa-envelope me-3\"></i>
-                            boutique_francais@gmail.com
+                            <a  href=\"mailto:boutique_francais@gmail.com\" class=\"text-reset\">boutique_francais@gmail.com</a>
                         </p>
-                        <p><i class=\"fas fa-phone me-3\"></i> + 01 234 567 88</p>
-                        <p><i class=\"fas fa-print me-3\"></i> + 01 234 567 89</p>
+                        <p><i class=\"fas fa-phone me-3\"></i> <a href=\"tel:01 234 567 88\" class=\"text-reset\">+ 01 234 567 88</a></p>
+                        <p><i class=\"fas fa-print me-3\"></i> <a href=\"fax:01 234 567 89\" class=\"text-reset\">+ 01 234 567 89</a></p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -379,7 +388,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 </main>
 <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>
 <script src=\"";
-        // line 200
+        // line 206
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/bootstrap.bundle.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -400,9 +409,9 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 </script>
 </body>
 ";
-        // line 218
+        // line 224
         $this->displayBlock('script', $context, $blocks);
-        // line 220
+        // line 226
         echo "</html>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -471,7 +480,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 
     }
 
-    // line 218
+    // line 224
     public function block_script($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -501,7 +510,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 
     public function getDebugInfo()
     {
-        return array (  475 => 218,  465 => 109,  455 => 108,  445 => 16,  435 => 15,  416 => 9,  406 => 220,  404 => 218,  383 => 200,  350 => 170,  344 => 167,  338 => 164,  332 => 161,  320 => 152,  314 => 149,  308 => 146,  300 => 141,  294 => 138,  264 => 110,  262 => 108,  255 => 106,  248 => 101,  235 => 90,  222 => 85,  218 => 84,  214 => 83,  203 => 80,  199 => 79,  195 => 77,  182 => 75,  178 => 74,  174 => 72,  172 => 71,  162 => 63,  154 => 61,  144 => 59,  142 => 58,  136 => 55,  133 => 54,  127 => 53,  123 => 52,  117 => 49,  111 => 46,  101 => 39,  93 => 34,  74 => 17,  72 => 15,  68 => 14,  64 => 13,  57 => 9,  47 => 1,);
+        return array (  484 => 224,  474 => 109,  464 => 108,  454 => 16,  444 => 15,  425 => 9,  415 => 226,  413 => 224,  392 => 206,  358 => 175,  352 => 172,  345 => 168,  339 => 165,  333 => 162,  320 => 152,  314 => 149,  308 => 146,  300 => 141,  294 => 138,  264 => 110,  262 => 108,  255 => 106,  248 => 101,  235 => 90,  222 => 85,  218 => 84,  214 => 83,  203 => 80,  199 => 79,  195 => 77,  182 => 75,  178 => 74,  174 => 72,  172 => 71,  162 => 63,  154 => 61,  144 => 59,  142 => 58,  136 => 55,  133 => 54,  127 => 53,  123 => 52,  117 => 49,  111 => 46,  101 => 39,  93 => 34,  74 => 17,  72 => 15,  68 => 14,  64 => 13,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -665,18 +674,24 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
                     <!-- Grid column -->
                     <div class=\"col-md-3 col-lg-2 col-xl-2 mx-auto mb-4\">
                         <!-- Links -->
+
                         <h6 class=\"text-uppercase fw-bold mb-4\">
                             <a href=\"{{ path('home') }}\" class=\"text-reset\">LA BOUTIQUE</a>
                         </h6>
                         <p>
-                            <a class=\"nav-link text-reset\" href=\"{{ path('products') }}\" >Nos produits</a>
+                            <a href=\"{{ path('account') }}\" class=\"text-reset\">Mon compte</a>
                         </p>
                         <p>
-                            <a class=\"nav-link text-reset\" href=\"{{ path('contact') }}\">Nous Contacter</a>
+                            <a class=\"text-reset\" href=\"{{ path('products') }}\" >Nos produits</a>
+                        </p>
+
+                        <p>
+                            <a class=\" text-reset\" href=\"{{ path('contact') }}\">Nous Contacter</a>
                         </p>
                         <p>
                             <a href=\"{{ path('use_term') }}\" class=\"text-reset\">Conditions d'utilisation</a>
                         </p>
+
 
                     </div>
                     <!-- Grid column -->
@@ -688,10 +703,10 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
                         <p><i class=\"fas fa-home me-3\"></i> Pl. de la Loge, 66000 Perpignan</p>
                         <p>
                             <i class=\"fas fa-envelope me-3\"></i>
-                            boutique_francais@gmail.com
+                            <a  href=\"mailto:boutique_francais@gmail.com\" class=\"text-reset\">boutique_francais@gmail.com</a>
                         </p>
-                        <p><i class=\"fas fa-phone me-3\"></i> + 01 234 567 88</p>
-                        <p><i class=\"fas fa-print me-3\"></i> + 01 234 567 89</p>
+                        <p><i class=\"fas fa-phone me-3\"></i> <a href=\"tel:01 234 567 88\" class=\"text-reset\">+ 01 234 567 88</a></p>
+                        <p><i class=\"fas fa-print me-3\"></i> <a href=\"fax:01 234 567 89\" class=\"text-reset\">+ 01 234 567 89</a></p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -725,6 +740,6 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 </body>
 {% block script %}
 {% endblock %}
-</html>", "base.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/base.html.twig");
+</html>", "base.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/base.html.twig");
     }
 }

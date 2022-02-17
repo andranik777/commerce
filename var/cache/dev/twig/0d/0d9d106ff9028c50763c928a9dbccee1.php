@@ -242,7 +242,7 @@ class __TwigTemplate_4ebd66d1936cd03229a0a396f44c0d25 extends Template
 
         // line 66
         echo "    <script type=\"text/javascript\">
-        var stripe = Stripe(\"pk_test_51HWz8KGVnm98Up5GSk7E17U0T8CkgdGhfLXRCHPk5TVd17Osiws7rQWwvHqXOvzb7pcvqxtwGp7RZD0KHfvlTLSO00ija4VIMh\");
+        var stripe = Stripe(\"pk_test_51Jk8PtL2fDTd7kXS2uiBALkbXXSKkYi6lbYgnexTMpcrPdfaUR1T8sHvuagdrVaCbZAl4vNOzWFfNT5j6pgfDFWA00dxIjUqXG\");
         var checkoutButton = document.getElementById(\"checkout-button\");
         checkoutButton.addEventListener(\"click\", function () {
                 fetch(\"/commande/create-session/";
@@ -369,7 +369,7 @@ class __TwigTemplate_4ebd66d1936cd03229a0a396f44c0d25 extends Template
 
 {% block script %}
     <script type=\"text/javascript\">
-        var stripe = Stripe(\"pk_test_51HWz8KGVnm98Up5GSk7E17U0T8CkgdGhfLXRCHPk5TVd17Osiws7rQWwvHqXOvzb7pcvqxtwGp7RZD0KHfvlTLSO00ija4VIMh\");
+        var stripe = Stripe(\"pk_test_51Jk8PtL2fDTd7kXS2uiBALkbXXSKkYi6lbYgnexTMpcrPdfaUR1T8sHvuagdrVaCbZAl4vNOzWFfNT5j6pgfDFWA00dxIjUqXG\");
         var checkoutButton = document.getElementById(\"checkout-button\");
         checkoutButton.addEventListener(\"click\", function () {
                 fetch(\"/commande/create-session/{{ reference }}\", {
@@ -399,6 +399,6 @@ class __TwigTemplate_4ebd66d1936cd03229a0a396f44c0d25 extends Template
         });
     </script>
 {% endblock %}
-", "order/add.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/order/add.html.twig");
+", "order/add.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/order/add.html.twig");
     }
 }

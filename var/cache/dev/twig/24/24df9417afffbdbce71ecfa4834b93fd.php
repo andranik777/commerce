@@ -122,26 +122,35 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
         // line 52
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cart");
         echo "\" class=\"mr-md-3\">
-                <img src=\"";
+                ";
         // line 53
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["panier"]) || array_key_exists("panier", $context) ? $context["panier"] : (function () { throw new RuntimeError('Variable "panier" does not exist.', 53, $this->source); })()), "getCart", [], "any", false, false, false, 53) > 0)) {
+            echo "<span class=\"badge badge-success rounded-circle\" >";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["panier"]) || array_key_exists("panier", $context) ? $context["panier"] : (function () { throw new RuntimeError('Variable "panier" does not exist.', 53, $this->source); })()), "getCart", [], "any", false, false, false, 53), "html", null, true);
+            echo "</span>";
+        }
+        // line 54
+        echo "
+                <img src=\"";
+        // line 55
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/shopping-cart.png"), "html", null, true);
         echo "\" class=\"cart-icon\" alt=\"Mon panier\">
             </a>
             <div class=\"navbar-item-custom\">
                 ";
-        // line 56
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 56, $this->source); })()), "user", [], "any", false, false, false, 56)) {
-            // line 57
+        // line 58
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 58, $this->source); })()), "user", [], "any", false, false, false, 58)) {
+            // line 59
             echo "                    <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account");
             echo "\">Mon compte <small>(";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 57, $this->source); })()), "user", [], "any", false, false, false, 57), "firstname", [], "any", false, false, false, 57), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 59, $this->source); })()), "user", [], "any", false, false, false, 59), "firstname", [], "any", false, false, false, 59), "html", null, true);
             echo ")</small></a> | <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Déconnexion</a>
                 ";
         } else {
-            // line 59
+            // line 61
             echo "                    <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Connexion</a> | <a href=\"";
@@ -149,7 +158,7 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
             echo "\">Inscription</a>
                 ";
         }
-        // line 61
+        // line 63
         echo "            </div>
 
         </div>
@@ -159,17 +168,17 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
 <main role=\"main\">
 
     ";
-        // line 69
+        // line 71
         if (        $this->hasBlock("carousel", $context, $blocks)) {
-            // line 70
+            // line 72
             echo "    <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">
         <ol class=\"carousel-indicators\">
             ";
-            // line 72
+            // line 74
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["headers"]) || array_key_exists("headers", $context) ? $context["headers"] : (function () { throw new RuntimeError('Variable "headers" does not exist.', 72, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["headers"]) || array_key_exists("headers", $context) ? $context["headers"] : (function () { throw new RuntimeError('Variable "headers" does not exist.', 74, $this->source); })()));
             foreach ($context['_seq'] as $context["key"] => $context["header"]) {
-                // line 73
+                // line 75
                 echo "                <li data-target=\"#myCarousel\" data-slide-to=\"";
                 echo twig_escape_filter($this->env, $context["key"], "html", null, true);
                 echo "\" ";
@@ -182,37 +191,37 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['key'], $context['header'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 75
+            // line 77
             echo "        </ol>
         <div class=\"carousel-inner\">
             ";
-            // line 77
+            // line 79
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["headers"]) || array_key_exists("headers", $context) ? $context["headers"] : (function () { throw new RuntimeError('Variable "headers" does not exist.', 77, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["headers"]) || array_key_exists("headers", $context) ? $context["headers"] : (function () { throw new RuntimeError('Variable "headers" does not exist.', 79, $this->source); })()));
             foreach ($context['_seq'] as $context["key"] => $context["header"]) {
-                // line 78
+                // line 80
                 echo "            <div class=\"carousel-item ";
                 if (($context["key"] == 0)) {
                     echo "active";
                 }
                 echo "\" style=\"background: url('/uploads/";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "illustration", [], "any", false, false, false, 78), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "illustration", [], "any", false, false, false, 80), "html", null, true);
                 echo "');background-size:cover;\">
                 <div class=\"container\">
                     <div class=\"carousel-caption text-left\">
                         <h1>";
-                // line 81
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "title", [], "any", false, false, false, 81), "html", null, true);
+                // line 83
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "title", [], "any", false, false, false, 83), "html", null, true);
                 echo "</h1>
                         <p>";
-                // line 82
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "content", [], "any", false, false, false, 82), "html", null, true);
+                // line 84
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "content", [], "any", false, false, false, 84), "html", null, true);
                 echo "</p>
                         <p><a class=\"btn btn-lg btn-info\" href=\"";
-                // line 83
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "btnUrl", [], "any", false, false, false, 83), "html", null, true);
+                // line 85
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "btnUrl", [], "any", false, false, false, 85), "html", null, true);
                 echo "\" role=\"button\">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "btnTitle", [], "any", false, false, false, 83), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["header"], "btnTitle", [], "any", false, false, false, 85), "html", null, true);
                 echo "</a></p>
                     </div>
                 </div>
@@ -222,7 +231,7 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['key'], $context['header'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 88
+            // line 90
             echo "        </div>
         <a class=\"carousel-control-prev\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">
             <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
@@ -235,23 +244,23 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
     </div>
     ";
         }
-        // line 99
+        // line 101
         echo "
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class=\"container marketing ";
-        // line 104
+        // line 106
         if ( !        $this->hasBlock("carousel", $context, $blocks)) {
             echo "mt-5";
         }
         echo "\">
 
         ";
-        // line 106
-        $this->displayBlock('content', $context, $blocks);
         // line 108
+        $this->displayBlock('content', $context, $blocks);
+        // line 110
         echo "
     </div><!-- /.container -->
 
@@ -281,33 +290,33 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
                         <!-- Links -->
                         <h6 class=\"text-uppercase fw-bold mb-4\">
                             <a href=\"";
-        // line 136
+        // line 138
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products");
-        echo "\">Products</a>
+        echo "\" class=\"text-reset\">Products</a>
                         </h6>
                         <p>
                             <a href=\"";
-        // line 139
+        // line 141
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "perfect-v-neck-t-shirt-femme"]);
-        echo "\">T-Shirt
+        echo "\" class=\"text-reset\">T-Shirt
                             </a>
 
                         </p>
                         <p>
                             <a href=\"";
-        // line 144
+        // line 146
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "grace-karin-femme-chemisier-col-en-v-dentelle-suisse-point-tops-casual-manches-longues-blouse-a-la-mode"]);
         echo "\" class=\"text-reset\">Chemisier</a>
                         </p>
                         <p>
                             <a href=\"";
-        // line 147
+        // line 149
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "sweat-a-capuche-longue"]);
         echo "\" class=\"text-reset\">Sweat à Capuche Longue</a>
                         </p>
                         <p>
                             <a href=\"";
-        // line 150
+        // line 152
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "jean-skinny-femme"]);
         echo "\" class=\"text-reset\">Jean Skinny Femme</a>
                         </p>
@@ -319,25 +328,25 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
                         <!-- Links -->
                         <h6 class=\"text-uppercase fw-bold mb-4\">
                             <a href=\"";
-        // line 159
+        // line 161
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\">LA BOUTIQUE</a>
+        echo "\" class=\"text-reset\">LA BOUTIQUE</a>
                         </h6>
                         <p>
-                            <a class=\"nav-link\" href=\"";
-        // line 162
+                            <a class=\"nav-link text-reset\" href=\"";
+        // line 164
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products");
-        echo "\">Nos produits</a>
+        echo "\" >Nos produits</a>
                         </p>
                         <p>
-                            <a class=\"nav-link\" href=\"";
-        // line 165
+                            <a class=\"nav-link text-reset\" href=\"";
+        // line 167
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
         echo "\">Nous Contacter</a>
                         </p>
                         <p>
                             <a href=\"";
-        // line 168
+        // line 170
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("use_term");
         echo "\" class=\"text-reset\">Conditions d'utilisation</a>
                         </p>
@@ -370,7 +379,7 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
 </main>
 <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>
 <script src=\"";
-        // line 198
+        // line 200
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/bootstrap.bundle.js"), "html", null, true);
         echo "\"></script>
 <script type=\"text/javascript\">
@@ -391,9 +400,9 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
 </script>
 </body>
 ";
-        // line 216
-        $this->displayBlock('script', $context, $blocks);
         // line 218
+        $this->displayBlock('script', $context, $blocks);
+        // line 220
         echo "</html>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -442,7 +451,7 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
 
     }
 
-    // line 106
+    // line 108
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -452,7 +461,7 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 107
+        // line 109
         echo "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -462,7 +471,7 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
 
     }
 
-    // line 216
+    // line 218
     public function block_script($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -492,7 +501,7 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
 
     public function getDebugInfo()
     {
-        return array (  466 => 216,  456 => 107,  446 => 106,  436 => 16,  426 => 15,  407 => 9,  397 => 218,  395 => 216,  374 => 198,  341 => 168,  335 => 165,  329 => 162,  323 => 159,  311 => 150,  305 => 147,  299 => 144,  291 => 139,  285 => 136,  255 => 108,  253 => 106,  246 => 104,  239 => 99,  226 => 88,  213 => 83,  209 => 82,  205 => 81,  194 => 78,  190 => 77,  186 => 75,  173 => 73,  169 => 72,  165 => 70,  163 => 69,  153 => 61,  145 => 59,  135 => 57,  133 => 56,  127 => 53,  123 => 52,  117 => 49,  111 => 46,  101 => 39,  93 => 34,  74 => 17,  72 => 15,  68 => 14,  64 => 13,  57 => 9,  47 => 1,);
+        return array (  475 => 218,  465 => 109,  455 => 108,  445 => 16,  435 => 15,  416 => 9,  406 => 220,  404 => 218,  383 => 200,  350 => 170,  344 => 167,  338 => 164,  332 => 161,  320 => 152,  314 => 149,  308 => 146,  300 => 141,  294 => 138,  264 => 110,  262 => 108,  255 => 106,  248 => 101,  235 => 90,  222 => 85,  218 => 84,  214 => 83,  203 => 80,  199 => 79,  195 => 77,  182 => 75,  178 => 74,  174 => 72,  172 => 71,  162 => 63,  154 => 61,  144 => 59,  142 => 58,  136 => 55,  133 => 54,  127 => 53,  123 => 52,  117 => 49,  111 => 46,  101 => 39,  93 => 34,  74 => 17,  72 => 15,  68 => 14,  64 => 13,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -549,6 +558,8 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
                 </li>
             </ul>
             <a href=\"{{ path('cart') }}\" class=\"mr-md-3\">
+                {% if panier.getCart > 0 %}<span class=\"badge badge-success rounded-circle\" >{{ panier.getCart }}</span>{% endif %}
+
                 <img src=\"{{ asset('assets/img/shopping-cart.png') }}\" class=\"cart-icon\" alt=\"Mon panier\">
             </a>
             <div class=\"navbar-item-custom\">
@@ -632,10 +643,10 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
                     <div class=\"col-md-2 col-lg-2 col-xl-2 mx-auto mb-4\">
                         <!-- Links -->
                         <h6 class=\"text-uppercase fw-bold mb-4\">
-                            <a href=\"{{ path('products') }}\">Products</a>
+                            <a href=\"{{ path('products') }}\" class=\"text-reset\">Products</a>
                         </h6>
                         <p>
-                            <a href=\"{{ path( 'product', {'slug': 'perfect-v-neck-t-shirt-femme'}) }}\">T-Shirt
+                            <a href=\"{{ path( 'product', {'slug': 'perfect-v-neck-t-shirt-femme'}) }}\" class=\"text-reset\">T-Shirt
                             </a>
 
                         </p>
@@ -655,13 +666,13 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
                     <div class=\"col-md-3 col-lg-2 col-xl-2 mx-auto mb-4\">
                         <!-- Links -->
                         <h6 class=\"text-uppercase fw-bold mb-4\">
-                            <a href=\"{{ path('home') }}\">LA BOUTIQUE</a>
+                            <a href=\"{{ path('home') }}\" class=\"text-reset\">LA BOUTIQUE</a>
                         </h6>
                         <p>
-                            <a class=\"nav-link\" href=\"{{ path('products') }}\">Nos produits</a>
+                            <a class=\"nav-link text-reset\" href=\"{{ path('products') }}\" >Nos produits</a>
                         </p>
                         <p>
-                            <a class=\"nav-link\" href=\"{{ path('contact') }}\">Nous Contacter</a>
+                            <a class=\"nav-link text-reset\" href=\"{{ path('contact') }}\">Nous Contacter</a>
                         </p>
                         <p>
                             <a href=\"{{ path('use_term') }}\" class=\"text-reset\">Conditions d'utilisation</a>
@@ -714,6 +725,6 @@ class __TwigTemplate_4144488b01e86f1938ea52c93c056914 extends Template
 </body>
 {% block script %}
 {% endblock %}
-</html>", "base.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/base.html.twig");
+</html>", "base.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/base.html.twig");
     }
 }
