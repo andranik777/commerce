@@ -25,4 +25,5 @@ return array(
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
     '09f6b20656683369174dd6fa83b7e5fb' => $vendorDir . '/symfony/polyfill-uuid/bootstrap.php',
     '8cff32064859f4559445b89279f3199c' => $vendorDir . '/php-http/message/src/filters.php',
+    '6e55b274997d32b3f3fff58f6dd030ae' => $vendorDir . '/platformsh/symfonyflex-bridge/platformsh-flex-env.php',
 );

@@ -167,6 +167,8 @@ return [[
 '%5B%5BC%5DEasyCorp%5CBundle%5CEasyAdminBundle%5CController%5CAbstractCrudController%23configureFields%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CAdmin%5CDashboardController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CAdmin%5CDashboardController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAdmin%5CDashboardController%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CAdmin%5CDashboardController%23__construct%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CAdmin%5CDashboardController%23index%5D%5B1%5D' => 12,
 '%5B%5BC%5DApp%5CController%5CAdmin%5CDashboardController%23index%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CAdmin%5CDashboardController%23configureDashboard%5D%5B1%5D' => 1,
@@ -185,6 +187,8 @@ return [[
 '%5B%5BC%5DEasyCorp%5CBundle%5CEasyAdminBundle%5CController%5CAbstractDashboardController%23configureActions%5D%5B1%5D' => 2,
 '%5BEasyCorp%5CBundle%5CEasyAdminBundle%5CController%5CAbstractDashboardController%23configureFilters%5D%5B1%5D' => 1,
 '%5B%5BC%5DEasyCorp%5CBundle%5CEasyAdminBundle%5CController%5CAbstractDashboardController%23configureFilters%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAdmin%5CDashboardController%24adminUrlGenerator%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CAdmin%5CDashboardController%24adminUrlGenerator%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CAdmin%5CHeaderCrudController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CAdmin%5CHeaderCrudController%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CAdmin%5CHeaderCrudController%23getEntityFqcn%5D%5B1%5D' => 1,
@@ -1342,7 +1346,7 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1645225282,
+2 => 1645270944,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [

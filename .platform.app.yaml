@@ -1,0 +1,73 @@
+# The name of this application, which must be unique within a project.
+name: 'app'
+
+# The type key specifies the language and version for your application.
+type: php:8.0
+
+build:
+  flavor: composer
+
+# By default, composer 1 will be used. Specify composer 2 in the dependencies to get the latest version
+dependencies:
+  php:
+    composer/composer: '^2'
+
+variables:
+  env:
+    # Configuration des variables d'environnement pour Symfony
+    APP_ENV: 'prod'
+    APP_DEBUG: 0
+
+
+# The relationships of the application with services or other applications.
+# The left-hand side is the name of the relationship as it will be exposed
+# to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
+# side is in the form `<service name>:<endpoint name>`.
+relationships:
+  database: 'db:mysql'
+
+# The hooks that will be triggered when the package is deployed.
+hooks:
+  # Build hooks can modify the application files on disk but not access any services like databases.
+  build: |
+    set -x -e
+    curl -fs https://get.symfony.com/cloud/configurator | bash
+    symfony-build
+    bin/console cache:clear
+  deploy: |
+    set -x -e
+    symfony-deploy
+    php bin/console doctrine:fixtures:load --no-interaction
+    bin/console --env=prod cache:clear
+
+
+
+# The size of the persistent disk of the application (in MB).
+disk: 2048
+
+
+# Les dossiers qui doivent rester accessibles en écriture
+mounts:
+  "/var/cache": "shared:files/cache"
+  "/var/log": "shared:files/log"
+  "/var/sessions": "shared:files/sessions"
+# The configuration of the application when it is exposed to the web
+runtime:
+  extensions:
+    - apcu
+    - blackfire
+    - ctype
+    - iconv
+    - mbstring
+    - pdo_pgsql
+    - sodium
+    - xsl
+# La configuration web
+web:
+  locations:
+    "/":
+      # Dossier public
+      root: "public"
+      # Le contrôleur frontal (qui doit recevoir toutes les requêtes)
+      passthru: "/index.php"
+

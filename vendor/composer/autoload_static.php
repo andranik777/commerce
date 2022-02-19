@@ -26,6 +26,7 @@ class ComposerStaticInit0d4c49f9a2c403ac5dacbcad72e7701f
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
+        '6e55b274997d32b3f3fff58f6dd030ae' => __DIR__ . '/..' . '/platformsh/symfonyflex-bridge/platformsh-flex-env.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -128,6 +129,7 @@ class ComposerStaticInit0d4c49f9a2c403ac5dacbcad72e7701f
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'ProxyManager\\' => 13,
+            'Platformsh\\ConfigReader\\' => 24,
             'PhpParser\\' => 10,
             'PackageVersions\\' => 16,
         ),
@@ -534,6 +536,10 @@ class ComposerStaticInit0d4c49f9a2c403ac5dacbcad72e7701f
         'ProxyManager\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager',
+        ),
+        'Platformsh\\ConfigReader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/platformsh/config-reader/src',
         ),
         'PhpParser\\' => 
         array (
@@ -3030,6 +3036,10 @@ class ComposerStaticInit0d4c49f9a2c403ac5dacbcad72e7701f
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'Platformsh\\ConfigReader\\BuildTimeVariableAccessException' => __DIR__ . '/..' . '/platformsh/config-reader/src/BuildTimeVariableAccessException.php',
+        'Platformsh\\ConfigReader\\Config' => __DIR__ . '/..' . '/platformsh/config-reader/src/Config.php',
+        'Platformsh\\ConfigReader\\NoCredentialFormatterFoundException' => __DIR__ . '/..' . '/platformsh/config-reader/src/NoCredentialFormatterFoundException.php',
+        'Platformsh\\ConfigReader\\NotValidPlatformException' => __DIR__ . '/..' . '/platformsh/config-reader/src/NotValidPlatformException.php',
         'ProxyManager\\Autoloader\\Autoloader' => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager/Autoloader/Autoloader.php',
         'ProxyManager\\Autoloader\\AutoloaderInterface' => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager/Autoloader/AutoloaderInterface.php',
         'ProxyManager\\Configuration' => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager/Configuration.php',
