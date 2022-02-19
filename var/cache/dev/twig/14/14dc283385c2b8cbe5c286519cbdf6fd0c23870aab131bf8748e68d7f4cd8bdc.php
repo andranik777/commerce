@@ -1671,6 +1671,6 @@ class __TwigTemplate_685a7b02bb30a09a81e5abef4e1d5daa96c4d8fde17625ba38933bf21bf
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

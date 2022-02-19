@@ -185,6 +185,11 @@ class __TwigTemplate_02a7827e0a63f5e2a5b824c91f8d31419d67fca84cfd5fa0bb0f783caf2
         echo twig_escape_filter($this->env, twig_number_format_filter($this->env, ((twig_get_attribute($this->env, $this->source, (isset($context["order"]) || array_key_exists("order", $context) ? $context["order"] : (function () { throw new RuntimeError('Variable "order" does not exist.', 48, $this->source); })()), "carrierPrice", [], "any", false, false, false, 48) + twig_get_attribute($this->env, $this->source, (isset($context["order"]) || array_key_exists("order", $context) ? $context["order"] : (function () { throw new RuntimeError('Variable "order" does not exist.', 48, $this->source); })()), "getTotal", [], "any", false, false, false, 48)) / 100), 2, ",", "."), "html", null, true);
         echo " €
     </div>
+
+    <a href=\"";
+        // line 51
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account_order_download", ["reference" => twig_get_attribute($this->env, $this->source, (isset($context["order"]) || array_key_exists("order", $context) ? $context["order"] : (function () { throw new RuntimeError('Variable "order" does not exist.', 51, $this->source); })()), "reference", [], "any", false, false, false, 51)]), "html", null, true);
+        echo "\" class=\"btn btn-success\">Telecherger</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -206,7 +211,7 @@ class __TwigTemplate_02a7827e0a63f5e2a5b824c91f8d31419d67fca84cfd5fa0bb0f783caf2
 
     public function getDebugInfo()
     {
-        return array (  185 => 48,  181 => 47,  177 => 46,  171 => 42,  162 => 39,  158 => 38,  154 => 37,  150 => 36,  147 => 35,  143 => 34,  126 => 20,  122 => 19,  118 => 18,  115 => 17,  111 => 15,  109 => 14,  106 => 13,  104 => 12,  101 => 11,  99 => 10,  93 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  191 => 51,  185 => 48,  181 => 47,  177 => 46,  171 => 42,  162 => 39,  158 => 38,  154 => 37,  150 => 36,  147 => 35,  143 => 34,  126 => 20,  122 => 19,  118 => 18,  115 => 17,  111 => 15,  109 => 14,  106 => 13,  104 => 12,  101 => 11,  99 => 10,  93 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -260,6 +265,8 @@ class __TwigTemplate_02a7827e0a63f5e2a5b824c91f8d31419d67fca84cfd5fa0bb0f783caf2
         <strong>Livraison :</strong> {{ (order.carrierprice / 100)|number_format(2, ',', '.') }} €<br/>
         <strong>Total : </strong> {{ ((order.carrierPrice + order.getTotal) / 100)|number_format(2, ',', '.') }} €
     </div>
+
+    <a href=\"{{ path(\"account_order_download\",{'reference':  order.reference}) }}\" class=\"btn btn-success\">Telecherger</a>
 {% endblock %}", "account/order_show.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/account/order_show.html.twig");
     }
 }

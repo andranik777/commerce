@@ -84,14 +84,22 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 6
-        echo "    <!-- Three columns of text below the carousel -->
+        echo "    <style>
+        header {
+            margin-top: 0 !important;
+        }
+        .marketing {
+            margin-top: 2rem;
+        }
+    </style>
+    <!-- Three columns of text below the carousel -->
     <h3>Nos meilleures ventes</h3>
     <p>Découvrez les articles les plus vendus.</p>
     <div class=\"row\">
         ";
-        // line 10
+        // line 18
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 10, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 18, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -106,12 +114,12 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 11
+            // line 19
             echo "            <div class=\"col-md-3\">
                 ";
-            // line 12
-            $this->loadTemplate("product/single_product.html.twig", "home/index.html.twig", 12)->display($context);
-            // line 13
+            // line 20
+            $this->loadTemplate("product/single_product.html.twig", "home/index.html.twig", 20)->display($context);
+            // line 21
             echo "            </div>
         ";
             ++$context['loop']['index0'];
@@ -126,7 +134,7 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 15
+        // line 23
         echo "    </div><!-- /.row -->
 
 
@@ -141,7 +149,7 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
         </div>
         <div class=\"col-md-5\">
             <img src=\"";
-        // line 28
+        // line 36
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/first.jpg"), "html", null, true);
         echo "\" class=\"img-fluid\" alt=\"Un savoir-faire Français\">
         </div>
@@ -156,7 +164,7 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
         </div>
         <div class=\"col-md-5 order-md-1\">
             <img src=\"";
-        // line 40
+        // line 48
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/second.jpg"), "html", null, true);
         echo "\" class=\"img-fluid\" alt=\"Une boutique ouverte toute l'année\">
         </div>
@@ -184,7 +192,7 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
 
     public function getDebugInfo()
     {
-        return array (  160 => 40,  145 => 28,  130 => 15,  115 => 13,  113 => 12,  110 => 11,  93 => 10,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  168 => 48,  153 => 36,  138 => 23,  123 => 21,  121 => 20,  118 => 19,  101 => 18,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -194,6 +202,14 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
 {% block carousel %}{% endblock %}
 
 {% block content %}
+    <style>
+        header {
+            margin-top: 0 !important;
+        }
+        .marketing {
+            margin-top: 2rem;
+        }
+    </style>
     <!-- Three columns of text below the carousel -->
     <h3>Nos meilleures ventes</h3>
     <p>Découvrez les articles les plus vendus.</p>
@@ -233,6 +249,6 @@ class __TwigTemplate_694145d62da423a8370717eaf653af9d94337589de413a9283699c8ee7b
     </div>
 
     <!-- /END THE FEATURETTES -->
-{% endblock %}", "home/index.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/home/index.html.twig");
+{% endblock %}", "home/index.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/home/index.html.twig");
     }
 }

@@ -20,6 +20,9 @@ return array(
     '8825ede83f2f289127722d4e842cf7e8' => $vendorDir . '/symfony/polyfill-intl-grapheme/bootstrap.php',
     'b6b991a57620e2fb6b2f66f03fe9ddc2' => $vendorDir . '/symfony/string/Resources/functions.php',
     '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
-    '09f6b20656683369174dd6fa83b7e5fb' => $vendorDir . '/symfony/polyfill-uuid/bootstrap.php',
+    'a0edc8309cc5e1d60e3047b5df6b7052' => $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
+    '9c67151ae59aff4788964ce8eb2a0f43' => $vendorDir . '/clue/stream-filter/src/functions_include.php',
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
+    '09f6b20656683369174dd6fa83b7e5fb' => $vendorDir . '/symfony/polyfill-uuid/bootstrap.php',
+    '8cff32064859f4559445b89279f3199c' => $vendorDir . '/php-http/message/src/filters.php',
 );

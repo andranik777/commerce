@@ -296,6 +296,6 @@ class __TwigTemplate_f11b17a249e656e77dfbba7c77b66018268c1df4b3c6a9342b290100c24
         <p><b>Votre panier est vide.</b></p>
     {% endif %}
 {% endblock %}
-", "cart/index.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/cart/index.html.twig");
+", "cart/index.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/cart/index.html.twig");
     }
 }

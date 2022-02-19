@@ -160,6 +160,6 @@ class __TwigTemplate_4a235dd7d1517962d6f11be5fc7bb2c65c8cf002df9204d28d22c0e5f0a
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: profiler_url, name: 'time', status: status_color }) }}
 {% endblock %}
-", "@WebProfiler/Collector/memory.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
+", "@WebProfiler/Collector/memory.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
     }
 }

@@ -187,6 +187,6 @@ class __TwigTemplate_92249162d1e3207f3c636543e38c6b0e4c8cf9cff86184048156dcff3ac
             </div>
         </div>
     </div>
-{% endblock %}", "product/index.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/product/index.html.twig");
+{% endblock %}", "product/index.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/product/index.html.twig");
     }
 }

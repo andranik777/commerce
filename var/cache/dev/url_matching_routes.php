@@ -54,26 +54,29 @@ return [
                         .'|pte/(?'
                             .'|m(?'
                                 .'|odifier\\-une\\-adresse/([^/]++)(*:220)'
-                                .'|es\\-commandes/([^/]++)(*:250)'
+                                .'|es\\-commandes/([^/]++)(?'
+                                    .'|(*:253)'
+                                    .'|/download(*:270)'
+                                .')'
                             .')'
-                            .'|supprimer\\-une\\-adresse/([^/]++)(*:291)'
+                            .'|supprimer\\-une\\-adresse/([^/]++)(*:312)'
                         .')'
                         .'|mande/(?'
-                            .'|erreur/([^/]++)(*:324)'
-                            .'|merci/([^/]++)(*:346)'
-                            .'|create\\-session/([^/]++)(*:378)'
+                            .'|erreur/([^/]++)(*:345)'
+                            .'|merci/([^/]++)(*:367)'
+                            .'|create\\-session/([^/]++)(*:399)'
                         .')'
                     .')'
                     .'|art/(?'
-                        .'|add/([^/]++)(*:407)'
+                        .'|add/([^/]++)(*:428)'
                         .'|de(?'
-                            .'|lete/([^/]++)(*:433)'
-                            .'|crease/([^/]++)(*:456)'
+                            .'|lete/([^/]++)(*:454)'
+                            .'|crease/([^/]++)(*:477)'
                         .')'
                     .')'
                 .')'
-                .'|/produit/([^/]++)(*:484)'
-                .'|/modifier\\-mon\\-mot\\-de\\-passe/([^/]++)(*:531)'
+                .'|/produit/([^/]++)(*:505)'
+                .'|/modifier\\-mon\\-mot\\-de\\-passe/([^/]++)(*:552)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -85,16 +88,17 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         220 => [[['_route' => 'account_address_edit', '_controller' => 'App\\Controller\\AccountAddressController::edit'], ['id'], null, null, false, true, null]],
-        250 => [[['_route' => 'account_order_show', '_controller' => 'App\\Controller\\AccountOrderController::show'], ['reference'], null, null, false, true, null]],
-        291 => [[['_route' => 'account_address_delete', '_controller' => 'App\\Controller\\AccountAddressController::delete'], ['id'], null, null, false, true, null]],
-        324 => [[['_route' => 'order_cancel', '_controller' => 'App\\Controller\\OrderCancelController::index'], ['stripeSessionId'], null, null, false, true, null]],
-        346 => [[['_route' => 'order_validate', '_controller' => 'App\\Controller\\OrderSuccessController::index'], ['stripeSessionId'], null, null, false, true, null]],
-        378 => [[['_route' => 'stripe_create_session', '_controller' => 'App\\Controller\\StripeController::index'], ['reference'], null, null, false, true, null]],
-        407 => [[['_route' => 'add_to_cart', '_controller' => 'App\\Controller\\CartController::add'], ['id'], null, null, false, true, null]],
-        433 => [[['_route' => 'delete_to_cart', '_controller' => 'App\\Controller\\CartController::delete'], ['id'], null, null, false, true, null]],
-        456 => [[['_route' => 'decrease_to_cart', '_controller' => 'App\\Controller\\CartController::decrease'], ['id'], null, null, false, true, null]],
-        484 => [[['_route' => 'product', '_controller' => 'App\\Controller\\ProductController::show'], ['slug'], null, null, false, true, null]],
-        531 => [
+        253 => [[['_route' => 'account_order_show', '_controller' => 'App\\Controller\\AccountOrderController::show'], ['reference'], null, null, false, true, null]],
+        270 => [[['_route' => 'account_order_download', '_controller' => 'App\\Controller\\AccountOrderController::download'], ['reference'], null, null, false, false, null]],
+        312 => [[['_route' => 'account_address_delete', '_controller' => 'App\\Controller\\AccountAddressController::delete'], ['id'], null, null, false, true, null]],
+        345 => [[['_route' => 'order_cancel', '_controller' => 'App\\Controller\\OrderCancelController::index'], ['stripeSessionId'], null, null, false, true, null]],
+        367 => [[['_route' => 'order_validate', '_controller' => 'App\\Controller\\OrderSuccessController::index'], ['stripeSessionId'], null, null, false, true, null]],
+        399 => [[['_route' => 'stripe_create_session', '_controller' => 'App\\Controller\\StripeController::index'], ['reference'], null, null, false, true, null]],
+        428 => [[['_route' => 'add_to_cart', '_controller' => 'App\\Controller\\CartController::add'], ['id'], null, null, false, true, null]],
+        454 => [[['_route' => 'delete_to_cart', '_controller' => 'App\\Controller\\CartController::delete'], ['id'], null, null, false, true, null]],
+        477 => [[['_route' => 'decrease_to_cart', '_controller' => 'App\\Controller\\CartController::decrease'], ['id'], null, null, false, true, null]],
+        505 => [[['_route' => 'product', '_controller' => 'App\\Controller\\ProductController::show'], ['slug'], null, null, false, true, null]],
+        552 => [
             [['_route' => 'update_password', '_controller' => 'App\\Controller\\ResetPasswordController::update'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

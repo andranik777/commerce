@@ -94,7 +94,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
         echo "\" rel=\"stylesheet\">
 </head>
 <body>
-<header>
+<header id=\"base_header\">
     <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">
         <a class=\"navbar-brand\" href=\"";
         // line 39
@@ -165,7 +165,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
     </nav>
 </header>
 
-<main role=\"main\">
+<main role=\"main\" >
 
     ";
         // line 71
@@ -263,6 +263,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
         // line 110
         echo "
     </div><!-- /.container -->
+</main>
 
     <!-- FOOTER -->
 
@@ -290,13 +291,13 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
                         <!-- Links -->
                         <h6 class=\"text-uppercase fw-bold mb-4\">
                             <a href=\"";
-        // line 138
+        // line 139
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products");
         echo "\" class=\"text-reset\">Products</a>
                         </h6>
                         <p>
                             <a href=\"";
-        // line 141
+        // line 142
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "perfect-v-neck-t-shirt-femme"]);
         echo "\" class=\"text-reset\">T-Shirt
                             </a>
@@ -304,19 +305,19 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
                         </p>
                         <p>
                             <a href=\"";
-        // line 146
+        // line 147
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "grace-karin-femme-chemisier-col-en-v-dentelle-suisse-point-tops-casual-manches-longues-blouse-a-la-mode"]);
         echo "\" class=\"text-reset\">Chemisier</a>
                         </p>
                         <p>
                             <a href=\"";
-        // line 149
+        // line 150
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "sweat-a-capuche-longue"]);
         echo "\" class=\"text-reset\">Sweat à Capuche Longue</a>
                         </p>
                         <p>
                             <a href=\"";
-        // line 152
+        // line 153
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("product", ["slug" => "jean-skinny-femme"]);
         echo "\" class=\"text-reset\">Jean Skinny Femme</a>
                         </p>
@@ -329,32 +330,32 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 
                         <h6 class=\"text-uppercase fw-bold mb-4\">
                             <a href=\"";
-        // line 162
+        // line 163
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\" class=\"text-reset\">LA BOUTIQUE</a>
                         </h6>
                         <p>
                             <a href=\"";
-        // line 165
+        // line 166
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account");
         echo "\" class=\"text-reset\">Mon compte</a>
                         </p>
                         <p>
                             <a class=\"text-reset\" href=\"";
-        // line 168
+        // line 169
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("products");
         echo "\" >Nos produits</a>
                         </p>
 
                         <p>
                             <a class=\" text-reset\" href=\"";
-        // line 172
+        // line 173
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
         echo "\">Nous Contacter</a>
                         </p>
                         <p>
                             <a href=\"";
-        // line 175
+        // line 176
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("use_term");
         echo "\" class=\"text-reset\">Conditions d'utilisation</a>
                         </p>
@@ -385,7 +386,6 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
     </footer>
 
 
-</main>
 <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>
 <script src=\"";
         // line 206
@@ -412,7 +412,10 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
         // line 224
         $this->displayBlock('script', $context, $blocks);
         // line 226
-        echo "</html>";
+        echo "</html>
+
+
+";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -510,7 +513,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 
     public function getDebugInfo()
     {
-        return array (  484 => 224,  474 => 109,  464 => 108,  454 => 16,  444 => 15,  425 => 9,  415 => 226,  413 => 224,  392 => 206,  358 => 175,  352 => 172,  345 => 168,  339 => 165,  333 => 162,  320 => 152,  314 => 149,  308 => 146,  300 => 141,  294 => 138,  264 => 110,  262 => 108,  255 => 106,  248 => 101,  235 => 90,  222 => 85,  218 => 84,  214 => 83,  203 => 80,  199 => 79,  195 => 77,  182 => 75,  178 => 74,  174 => 72,  172 => 71,  162 => 63,  154 => 61,  144 => 59,  142 => 58,  136 => 55,  133 => 54,  127 => 53,  123 => 52,  117 => 49,  111 => 46,  101 => 39,  93 => 34,  74 => 17,  72 => 15,  68 => 14,  64 => 13,  57 => 9,  47 => 1,);
+        return array (  487 => 224,  477 => 109,  467 => 108,  457 => 16,  447 => 15,  428 => 9,  415 => 226,  413 => 224,  392 => 206,  359 => 176,  353 => 173,  346 => 169,  340 => 166,  334 => 163,  321 => 153,  315 => 150,  309 => 147,  301 => 142,  295 => 139,  264 => 110,  262 => 108,  255 => 106,  248 => 101,  235 => 90,  222 => 85,  218 => 84,  214 => 83,  203 => 80,  199 => 79,  195 => 77,  182 => 75,  178 => 74,  174 => 72,  172 => 71,  162 => 63,  154 => 61,  144 => 59,  142 => 58,  136 => 55,  133 => 54,  127 => 53,  123 => 52,  117 => 49,  111 => 46,  101 => 39,  93 => 34,  74 => 17,  72 => 15,  68 => 14,  64 => 13,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -551,7 +554,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
     <link href=\"{{ asset('assets/css/carousel.css') }}\" rel=\"stylesheet\">
 </head>
 <body>
-<header>
+<header id=\"base_header\">
     <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">
         <a class=\"navbar-brand\" href=\"{{ path('home') }}\">La Boutique Française</a>
         <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -583,7 +586,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
     </nav>
 </header>
 
-<main role=\"main\">
+<main role=\"main\" >
 
     {% if block('carousel') is defined %}
     <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">
@@ -626,6 +629,7 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
         {% endblock %}
 
     </div><!-- /.container -->
+</main>
 
     <!-- FOOTER -->
 
@@ -718,7 +722,6 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
     </footer>
 
 
-</main>
 <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>
 <script src=\"{{ asset('assets/js/bootstrap.bundle.js') }}\"></script>
 <script type=\"text/javascript\">
@@ -740,6 +743,9 @@ class __TwigTemplate_9ea4fc83752f902494727432b395155460c0dbc7fa6f6807aa48936d538
 </body>
 {% block script %}
 {% endblock %}
-</html>", "base.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/base.html.twig");
+</html>
+
+
+", "base.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/base.html.twig");
     }
 }

@@ -413,6 +413,6 @@ class __TwigTemplate_463025b06c05b41d020ce85a28bda50916050dd4b77248e82df6eaf1fc9
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

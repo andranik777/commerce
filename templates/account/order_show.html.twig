@@ -47,4 +47,6 @@
         <strong>Livraison :</strong> {{ (order.carrierprice / 100)|number_format(2, ',', '.') }} €<br/>
         <strong>Total : </strong> {{ ((order.carrierPrice + order.getTotal) / 100)|number_format(2, ',', '.') }} €
     </div>
+
+    <a href="{{ path("account_order_download",{'reference':  order.reference}) }}" class="btn btn-success">Telecherger</a>
 {% endblock %}

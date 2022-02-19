@@ -248,6 +248,6 @@ class __TwigTemplate_de1132ac961af8c5090ab0d5b3cad80760395ed6ad54793d9f0e48f93d1
         <li><a href=\"https://github.com/EasyCorp/EasyAdminBundle\">Project homepage</a></li>
     </ul>
 {% endblock %}
-", "@EasyAdmin/inspector/data_collector.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/inspector/data_collector.html.twig");
+", "@EasyAdmin/inspector/data_collector.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/inspector/data_collector.html.twig");
     }
 }

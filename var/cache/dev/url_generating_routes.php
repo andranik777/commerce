@@ -22,6 +22,7 @@ return [
     'account' => [[], ['_controller' => 'App\\Controller\\AccountController::index'], [], [['text', '/compte']], [], []],
     'account_order' => [[], ['_controller' => 'App\\Controller\\AccountOrderController::index'], [], [['text', '/compte/mes-commandes']], [], []],
     'account_order_show' => [['reference'], ['_controller' => 'App\\Controller\\AccountOrderController::show'], [], [['variable', '/', '[^/]++', 'reference', true], ['text', '/compte/mes-commandes']], [], []],
+    'account_order_download' => [['reference'], ['_controller' => 'App\\Controller\\AccountOrderController::download'], [], [['text', '/download'], ['variable', '/', '[^/]++', 'reference', true], ['text', '/compte/mes-commandes']], [], []],
     'account_password' => [[], ['_controller' => 'App\\Controller\\AccountPasswordController::index'], [], [['text', '/compte/modifier-mon-mot-de-passe']], [], []],
     'admin' => [[], ['_controller' => 'App\\Controller\\Admin\\DashboardController::index'], [], [['text', '/admin']], [], []],
     'use_term' => [[], ['_controller' => 'App\\Controller\\AdministratifController::index'], [], [['text', '/term_of_use']], [], []],

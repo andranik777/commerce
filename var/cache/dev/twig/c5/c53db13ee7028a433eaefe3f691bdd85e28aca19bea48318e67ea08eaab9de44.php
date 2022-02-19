@@ -92,6 +92,6 @@ class __TwigTemplate_daaf637c0e274afae3a06bd0b70b5cc54e140638d4ca8c767acd8d2753c
     <h5>{{ product.name }}</h5>
     <span class=\"product-subtitle\">{{ product.subtitle }}</span>
     <span class=\"product-price\">{{ (product.price / 100)|number_format(2, ',', '.') }} €</span>
-</div>", "product/single_product.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/product/single_product.html.twig");
+</div>", "product/single_product.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/product/single_product.html.twig");
     }
 }

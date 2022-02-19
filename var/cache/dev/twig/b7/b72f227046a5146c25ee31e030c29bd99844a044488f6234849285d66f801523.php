@@ -159,6 +159,6 @@ class __TwigTemplate_cebba5e96e233f7d844f9ccdf68ae100d427b0db6aa4dcc04e21d87203c
     Pour suivre votre commande, rendez-vous dans votre <a href=\"{{ path('account_order') }}\">compte</a>.
     </p>
 {% endblock %}
-", "order_success/index.html.twig", "/Users/andranikhakobyan/Downloads/la-boutique-francaise-master 2/templates/order_success/index.html.twig");
+", "order_success/index.html.twig", "/Users/andranikhakobyan/Desktop/la-boutique-francaise-master 2/templates/order_success/index.html.twig");
     }
 }
